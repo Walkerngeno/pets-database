@@ -76,7 +76,7 @@ class Services(db.Model):
 
 class Pets(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    z db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+    db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
 
     @validates('name')
     def validate_name(self, key, name):

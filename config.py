@@ -1,6 +1,9 @@
 import os
-import dotenv
-import sqlalchemy
+
 class Config:
-    SQLALCHEMY_DATABASE_URI = f"postgresql://postgres:Walker@localhost:5432/pets"
-    SQLALCHEMY_TRACK_MODIFICATIONS = False
+    # SECRET_KEY = os.environ.get('SECRET_KEY') or 'your_secret_key_here'
+    # SQLALCHEMY_DATABASE_URI = 'sqlite:///site.db'
+    # SQLALCHEMY_TRACK_MODIFICATIONS = False
+    SQLALCHEMY_DATABASE_URI =os.environ.get("DATABASE_URL")
+
+    SQLALCHEMY_TRACK_MODIFICATION =False
