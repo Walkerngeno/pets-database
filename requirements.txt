@@ -1,6 +1,6 @@
 blinker
 click==8.1.7
-Flask==3.0.0
+Flask
 Flask-Cors==4.0.0
 Flask-Migrate==4.0.5
 Flask-SQLAlchemy
