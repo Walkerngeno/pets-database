@@ -16,4 +16,4 @@ python-dotenv
 SQLAlchemy==2.0.23
 typing_extensions
 Werkzeug
-zipp==3.17.0
+zipp
